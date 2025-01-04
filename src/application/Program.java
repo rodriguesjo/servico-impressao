@@ -10,13 +10,15 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		PrintService<Integer> ps = new PrintService<>();
+		PrintService<String> ps = new PrintService<>();
 		
 		System.out.print("How many values? ");
 		int n = sc.nextInt();
 		
-		for (int i = 0; i < n; i++) {
-			int value = sc.nextInt();
+		sc.nextLine();
+		
+		for (int i = 0; i < n; i++) {			
+			String value = sc.nextLine();
 			ps.addValue(value);
 		}
 		
